@@ -119,6 +119,9 @@ netvotepoutou  = round((poutou_philippe / nb_exprime) * 100, 2)
 netvotevalerie  = round((pecresse_valerie/ nb_exprime) * 100, 2)
 netvoteroussel = round((roussel_fabien / nb_exprime) * 100, 2)
 
+
+#Partie graphique
+
 # Données
 labels = ['Emmanuel Macron', 'Autres']
 pourcentages = [netvotemanu, 100-netvotemanu]
@@ -237,7 +240,7 @@ print("Graphique enregistré sous le nom de Figure12.png")
 
 #Partie interraction avec l'utilisateur
 
-candidat = int(input("Quel candidat voulez-vous choisir : "))
+candidat = int(input( "\n 1: Emmanuel Macron \n 2: Nathalie Arthaud \n 3: Fabien Roussel\n 4: Jean Lasalle\n 5 : Marine Le Pen\n 6 : Eric Zemmour\n 7: Jean-Luc-Mélanchon\n 8: Anne Hidalgo\n 9: Yannick Jadot\n 10: Valérie Pécresse\n 11:Philippe Poutou\n 12: Nicolas Dupont Aignan \n Quel candidat voulez-vous choisir :" ))
 
 lut = {1: ("macron_emmanuel", "Emmanuel Macron"),
        2: ("arthaud_nathalie", "Nathalie Arthaud"),
