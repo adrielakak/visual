@@ -1,0 +1,315 @@
+.grid {
+    display: grid;
+    width: auto;
+    grid-template-columns: 50% 70%;
+    min-height: 400px; /* Hauteur minimale pour éviter la coupure */
+}
+
+img {
+    object-fit: fill;
+    height: 80%; /* Hauteur de l'image par rapport à son conteneur */
+    width: 80%; /* Largeur de l'image par rapport à son conteneur */
+    margin: 0; /* Supprime la marge par défaut pour éviter les décalages */
+    position: relative; /*propriété pour permettre l'utilisation de z-index */
+    z-index: 1; /* Définir un z-index supérieur à celui de l'animation pour que les images apparaissent devant */
+}
+
+.left-image {
+    object-position: left; /* Positionne l'image à gauche */
+    object-fit: contain; /* Rognage de l'image de gauche uniquement */
+}
+
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(97, 100, 93, 1); /* Changement de l'opacité à 1 pour rendre la barre de navigation opaque */
+    color: black;
+    z-index: 999; /* la barre de navigation est affichée au-dessus des autres éléments */
+}
+
+nav ul {                /* nav bar alligné sur l'axe x */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {           /*mot dans la nav */
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {                  /*quand l'utilisateur survole l'élement il se met en orange jaune */       
+    background-color: rgb(200, 131, 1);
+}
+
+.container {
+    max-width: 800px;
+    margin: 90px auto 50px; /* Ajout d'une marge supérieure pour éviter que le contenu ne soit masqué par la barre de navigation */
+    padding: 0 20px;
+    text-align: center;
+    position: relative; /*cette propriété permet l'utilisation de z-index */
+    z-index: 1; /* Définir un z-index supérieur à celui de l'animation pour que le texte apparaisse devant */
+}
+
+h1 {
+    font-size: 42px; /* Augmentation de la taille de la police  */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: black; 
+}
+
+p {
+    font-size: 20px; /* Augmentation de la taille de la police pour une meilleure lisibilité */
+    margin-bottom: 30px;
+    line-height: 1.5; /* Espacement des lignes pour une meilleure lisibilité */
+    color: black; /* Couleur personnalisée pour une meilleure lisibilité */
+}
+
+.mentions-bottom {
+    text-align: center;
+    position: relative; /* Ajoutez cette propriété pour permettre l'utilisation de z-index */
+    z-index: 1; /* Définir z-index supérieur à celui de l'animation pour que le texte apparaisse devant */
+}
+
+  
+  
+.mentions-bottom img {       /* pour l'image des mentions (en bas) */   
+    display: block;
+    margin: 0 auto;
+    height: 50px; /* Ajustez la taille de l'image*/
+    width: auto;
+    margin-bottom: 10px; /* Ajoute un espacement sous l'image */
+  }
+
+.form-group{        /* Le formulaire (allignement) */
+   display: block;
+	width: 200px;
+	margin-left: auto;
+    margin-right: auto
+}
+  
+
+
+
+@keyframes animate { /* Animation préfaites sources https://wweb.dev/resources/animated-css-background-generator */
+    0%{
+        transform: translateY(0) rotate(0deg);  
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+.background {
+    position: relative; /* Ajoutez cette propriété pour permettre l'utilisation de z-index */
+    z-index: 0; /* Définissez un z-index inférieur à celui du texte pour que l'animation apparaisse en arrière-plan */
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #050ead;
+    overflow: hidden;
+}
+.background li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 29s linear infinite;
+}
+
+
+
+
+.background li:nth-child(0) {
+    left: 68%;
+    width: 156px;
+    height: 156px;
+    bottom: -156px;
+    animation-delay: 1s;
+}
+.background li:nth-child(1) {
+    left: 8%;
+    width: 219px;
+    height: 219px;
+    bottom: -219px;
+    animation-delay: 4s;
+}
+.background li:nth-child(2) {
+    left: 50%;
+    width: 224px;
+    height: 224px;
+    bottom: -224px;
+    animation-delay: 7s;
+}
+.background li:nth-child(3) {
+    left: 3%;
+    width: 151px;
+    height: 151px;
+    bottom: -151px;
+    animation-delay: 13s;
+}
+.background li:nth-child(4) {
+    left: 67%;
+    width: 278px;
+    height: 278px;
+    bottom: -278px;
+    animation-delay: 8s;
+}
+.background li:nth-child(5) {
+    left: 21%;
+    width: 269px;
+    height: 269px;
+    bottom: -269px;
+    animation-delay: 15s;
+}
+.background li:nth-child(6) {
+    left: 56%;
+    width: 136px;
+    height: 136px;
+    bottom: -136px;
+    animation-delay: 29s;
+}
+.background li:nth-child(7) {
+    left: 24%;
+    width: 231px;
+    height: 231px;
+    bottom: -231px;
+    animation-delay: 31s;
+}
+.background li:nth-child(8) {
+    left: 11%;
+    width: 157px;
+    height: 157px;
+    bottom: -157px;
+    animation-delay: 7s;
+}
+.background li:nth-child(9) {
+    left: 65%;
+    width: 237px;
+    height: 237px;
+    bottom: -237px;
+    animation-delay: 38s;
+}
+.background li:nth-child(10) {
+    left: 63%;
+    width: 298px;
+    height: 298px;
+    bottom: -298px;
+    animation-delay: 19s;
+}
+.background li:nth-child(11) {
+    left: 82%;
+    width: 192px;
+    height: 192px;
+    bottom: -192px;
+    animation-delay: 11s;
+}
+.background li:nth-child(12) {
+    left: 83%;
+    width: 243px;
+    height: 243px;
+    bottom: -243px;
+    animation-delay: 37s;
+}
+.background li:nth-child(13) {
+    left: 15%;
+    width: 165px;
+    height: 165px;
+    bottom: -165px;
+    animation-delay: 43s;
+}
+.background li:nth-child(14) {
+    left: 81%;
+    width: 204px;
+    height: 204px;
+    bottom: -204px;
+    animation-delay: 69s;
+}
+.background li:nth-child(15) {
+    left: 3%;
+    width: 240px;
+    height: 240px;
+    bottom: -240px;
+    animation-delay: 35s;
+}
+.background li:nth-child(16) {
+    left: 77%;
+    width: 260px;
+    height: 260px;
+    bottom: -260px;
+    animation-delay: 18s;
+}
+.background li:nth-child(17) {
+    left: 74%;
+    width: 256px;
+    height: 256px;
+    bottom: -256px;
+    animation-delay: 11s;
+}
+.background li:nth-child(18) {
+    left: 49%;
+    width: 139px;
+    height: 139px;
+    bottom: -139px;
+    animation-delay: 34s;
+}
+.background li:nth-child(19) {
+    left: 65%;
+    width: 230px;
+    height: 230px;
+    bottom: -230px;
+    animation-delay: 37s;
+}
+.background li:nth-child(20) {
+    left: 55%;
+    width: 158px;
+    height: 158px;
+    bottom: -158px;
+    animation-delay: 62s;
+}
+.background li:nth-child(21) {
+    left: 72%;
+    width: 209px;
+    height: 209px;
+    bottom: -209px;
+    animation-delay: 45s;
+}
+.background li:nth-child(22) {
+    left: 55%;
+    width: 211px;
+    height: 211px;
+    bottom: -211px;
+    animation-delay: 64s;
+}
+.background li:nth-child(23) {
+    left: 68%;
+    width: 241px;
+    height: 241px;
+    bottom: -241px;
+    animation-delay: 41s;
+}
+.background li:nth-child(24) {
+    left: 60%;
+    width: 251px;
+    height: 251px;
+    bottom: -251px;
+    animation-delay: 22s;
+}
