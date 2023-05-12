@@ -19,7 +19,7 @@ poutou_philippe = 0
 dupont_aignan_nicolas = 0
 
 # Ouvrir le fichier CSV en mode lecture
-with open("election.csv", "r") as fichier_csv:
+with open("csv/election.csv", "r") as fichier_csv:
     # Créer un lecteur CSV
     lecteur_csv = csv.DictReader(fichier_csv)
 
@@ -72,7 +72,7 @@ donnees = {
 }
 
 # Définir le nom du fichier CSV
-fichier_csv = "donnees_votes.csv"
+fichier_csv = "csv/donnees_votes.csv"
 
 # Écrire les données dans le fichier CSV
 with open(fichier_csv, "w", newline="") as csvfile:
@@ -134,7 +134,7 @@ ax.pie(pourcentages, labels=labels, autopct='%1.1f%%')
 ax.set_title("Répartition des votes en île de France en %")
 
 # Exporter le graphique sous forme d'image
-fig.savefig("Figure1.png")
+fig.savefig("img/Figure1.png")
 
 # Afficher un message pour confirmer que l'image a été enregistrée
 print("Graphique enregistré sous le nom de Figure1.png")
@@ -146,7 +146,7 @@ pourcentages = [netvotemarine, 100-netvotemarine]
 fig, ax = plt.subplots()
 ax.pie(pourcentages, labels=labels, autopct='%1.1f%%')
 ax.set_title("Répartition des votes en île de France en %")
-fig.savefig("Figure2.png")
+fig.savefig("img/Figure2.png")
 print("Graphique enregistré sous le nom de Figure2.png")
 
 labels = ['Jean Luc Melanchon', 'Autres']
@@ -154,7 +154,7 @@ pourcentages = [netvotemelanchon, 100-netvotemelanchon]
 fig, ax = plt.subplots()
 ax.pie(pourcentages, labels=labels, autopct='%1.1f%%')
 ax.set_title("Répartition des votes en île de France en %")
-fig.savefig("Figure3.png")
+fig.savefig("img/Figure3.png")
 print("Graphique enregistré sous le nom de Figure3.png")
 
 
@@ -165,7 +165,7 @@ pourcentages = [netvotezemmour, 100-netvotezemmour]
 fig, ax = plt.subplots()
 ax.pie(pourcentages, labels=labels, autopct='%1.1f%%')
 ax.set_title("Répartition des votes en île de France en %")
-fig.savefig("Figure4.png")
+fig.savefig("img/Figure4.png")
 print("Graphique enregistré sous le nom de Figure4.png")
 
 
@@ -174,7 +174,7 @@ pourcentages = [netvotejadot, 100-netvotejadot]
 fig, ax = plt.subplots()
 ax.pie(pourcentages, labels=labels, autopct='%1.1f%%')
 ax.set_title("Répartition des votes en île de France en %")
-fig.savefig("Figure5.png")
+fig.savefig("img/Figure5.png")
 print("Graphique enregistré sous le nom de Figure5.png")
 
 
@@ -185,7 +185,7 @@ pourcentages = [netvotelasalle, 100-netvotelasalle]
 fig, ax = plt.subplots()
 ax.pie(pourcentages, labels=labels, autopct='%1.1f%%')
 ax.set_title("Répartition des votes en île de France en %")
-fig.savefig("Figure6.png")
+fig.savefig("img/Figure6.png")
 print("Graphique enregistré sous le nom de Figure6.png")
 
 labels = ['Anne Hidalgo', 'Autres']
@@ -193,7 +193,7 @@ pourcentages = [netvotehidalgo, 100-netvotehidalgo]
 fig, ax = plt.subplots()
 ax.pie(pourcentages, labels=labels, autopct='%1.1f%%')
 ax.set_title("Répartition des votes en île de France en %")
-fig.savefig("Figure7.png")
+fig.savefig("img/Figure7.png")
 print("Graphique enregistré sous le nom de Figure7.png")
 
 labels = ['Nicolas Aignant ', 'Autres']
@@ -201,7 +201,7 @@ pourcentages = [netvotenicolas, 100-netvotenicolas]
 fig, ax = plt.subplots()
 ax.pie(pourcentages, labels=labels, autopct='%1.1f%%')
 ax.set_title("Répartition des votes en île de France en %")
-fig.savefig("Figure8.png")
+fig.savefig("img/Figure8.png")
 print("Graphique enregistré sous le nom de Figure8.png")
 
 labels = ['Nathalie Arthaud', 'Autres']
@@ -209,7 +209,7 @@ pourcentages = [netvotenathalie, 100-netvotenathalie]
 fig, ax = plt.subplots()
 ax.pie(pourcentages, labels=labels, autopct='%1.1f%%')
 ax.set_title("Répartition des votes en île de France en %")
-fig.savefig("Figure9.png")
+fig.savefig("img/Figure9.png")
 print("Graphique enregistré sous le nom de Figure9.png")
 
 
@@ -218,7 +218,7 @@ pourcentages = [netvotepoutou, 100-netvotepoutou]
 fig, ax = plt.subplots()
 ax.pie(pourcentages, labels=labels, autopct='%1.1f%%')
 ax.set_title("Répartition des votes en île de France en %")
-fig.savefig("Figure10.png")
+fig.savefig("img/Figure10.png")
 print("Graphique enregistré sous le nom de Figure10.png")
 
 labels = ['Valérie Pécresse', 'Autres']
@@ -226,7 +226,7 @@ pourcentages = [netvotevalerie, 100-netvotevalerie]
 fig, ax = plt.subplots()
 ax.pie(pourcentages, labels=labels, autopct='%1.1f%%')
 ax.set_title("Répartition des votes en île de France en %")
-fig.savefig("Figure11.png")
+fig.savefig("img/Figure11.png")
 print("Graphique enregistré sous le nom de Figure11.png")
 
 labels = ['Fabien Roussel', 'Autres']
@@ -234,13 +234,13 @@ pourcentages = [netvoteroussel, 100-netvoteroussel]
 fig, ax = plt.subplots()
 ax.pie(pourcentages, labels=labels, autopct='%1.1f%%')
 ax.set_title("Répartition des votes en île de France en %")
-fig.savefig("Figure12.png")
+fig.savefig("img/Figure12.png")
 print("Graphique enregistré sous le nom de Figure12.png")
 
 
 #Partie interraction avec l'utilisateur
 
-candidat = int(input( "\n 1: Emmanuel Macron \n 2: Nathalie Arthaud \n 3: Fabien Roussel\n 4: Jean Lasalle\n 5 : Marine Le Pen\n 6 : Eric Zemmour\n 7: Jean-Luc-Mélanchon\n 8: Anne Hidalgo\n 9: Yannick Jadot\n 10: Valérie Pécresse\n 11:Philippe Poutou\n 12: Nicolas Dupont Aignan \n Quel candidat voulez-vous choisir :" ))
+candidat = int(input( "\n 1 : Emmanuel Macron \n 2 : Nathalie Arthaud \n 3 : Fabien Roussel\n 4 : Jean Lasalle\n 5 : Marine Le Pen\n 6 : Eric Zemmour\n 7 : Jean-Luc-Mélanchon\n 8 : Anne Hidalgo\n 9 : Yannick Jadot\n 10: Valérie Pécresse\n 11: Philippe Poutou\n 12: Nicolas Dupont Aignan \n Quel candidat voulez-vous choisir :" ))
 
 lut = {1: ("macron_emmanuel", "Emmanuel Macron"),
        2: ("arthaud_nathalie", "Nathalie Arthaud"),
@@ -260,7 +260,7 @@ candidat_name = lut[candidat][1]
 
 pourcentage_score = round((donnees[candidat_key] / nb_exprime) * 100, 2)
 
-fichier_csv = "resultat.csv"
+fichier_csv = "csv/resultat.csv"
 with open(fichier_csv, "w", newline="") as csvfile:
     writer = csv.writer(csvfile, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
     writer.writerow(["candidat", "score_en_pourcentages", "nb_voies"])
