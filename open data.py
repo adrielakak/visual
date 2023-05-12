@@ -42,6 +42,7 @@ with open("csv/election.csv", "r") as fichier_csv:
         poutou_philippe += float(ligne["poutou_philippe"])
         dupont_aignan_nicolas += float(ligne["dupont_aignan_nicolas"])
 
+#variable nécessaire au fonctionnement des descripteurs
 score = ""
 candidat = ""
 
@@ -266,7 +267,7 @@ with open(fichier_csv, "w", newline="") as csvfile:
     writer.writerow(["candidat", "score_en_pourcentages", "nb_voies"])
     writer.writerow([candidat_name, pourcentage_score, donnees[candidat_key]])
 
-print(f"{candidat_name} a obtenu {pourcentage_score}% des votes du premier tour")
+print(f"{candidat_name} a obtenu {pourcentage_score}% des votes du premier tour \n Le fichier resultat.csv a été généré sur le candidat choisi")
 
 
 
