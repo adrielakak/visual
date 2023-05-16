@@ -13,10 +13,6 @@ Création d'un site internet pour afficher les données traitées.
 
 Interface utilisateur conviviale pour interagir avec les données.
 
-
-Configuration
-Vous pouvez configurer certaines options du projet en modifiant le fichier config.js. Par exemple, vous pouvez spécifier le chemin du fichier CSV ou définir des paramètres de traitement des données.
-
 Contributions
 Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce projet, veuillez soumettre une pull request. Assurez-vous de respecter les normes de codage et d'inclure des tests appropriés.
 
