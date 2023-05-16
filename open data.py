@@ -263,7 +263,7 @@ with open(fichier_csv, "w", newline="") as csvfile:
     writer.writerow([candidat_name, pourcentage_score, donnees[candidat_key]])
 
 #afficher la phrase de conclusion en utilisant le formatage (f)
-print(f"{candidat_name} a obtenu {pourcentage_score}% des votes du premier tour \n Le fichier resultat.csv a été généré sur le candidat choisi")
+print(f"{candidat_name} a obtenu {pourcentage_score}% des votes du premier tour en île de France.\n Le fichier resultat.csv a été généré sur le candidat choisi")
 
 
 

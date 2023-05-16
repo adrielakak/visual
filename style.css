@@ -63,14 +63,14 @@ h1 {
     font-size: 42px; /* Augmentation de la taille de la police  */
     font-weight: bold;
     margin-bottom: 20px;
-    color: black; 
+    color: white; 
 }
 
 p {
     font-size: 20px; /* Augmentation de la taille de la police pour une meilleure lisibilité */
     margin-bottom: 30px;
     line-height: 1.5; /* Espacement des lignes pour une meilleure lisibilité */
-    color: black; /* Couleur personnalisée pour une meilleure lisibilité */
+    color: white; /* Couleur personnalisée pour une meilleure lisibilité */
 }
 
 .mentions-bottom {
