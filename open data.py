@@ -120,7 +120,7 @@ netvoteroussel = round((roussel_fabien / nb_exprime) * 100, 2)
 labels = ['Emmanuel Macron', 'Autres']
 pourcentages = [netvotemanu, 100-netvotemanu]
 
-# Créer un graphique en camembert avec les pourcentages
+# Créer un graphique en camembert avec les pourcentages (autopct)
 fig, ax = plt.subplots()
 ax.pie(pourcentages, labels=labels, autopct='%1.1f%%')
 
@@ -236,7 +236,7 @@ print("Graphique enregistré sous le nom de Figure12.png")
 
 candidat = int(input( "\n 1 : Emmanuel Macron \n 2 : Nathalie Arthaud \n 3 : Fabien Roussel\n 4 : Jean Lasalle\n 5 : Marine Le Pen\n 6 : Eric Zemmour\n 7 : Jean-Luc-Mélanchon\n 8 : Anne Hidalgo\n 9 : Yannick Jadot\n 10: Valérie Pécresse\n 11: Philippe Poutou\n 12: Nicolas Dupont Aignan \n Quel candidat voulez-vous choisir [1:12]:" ))
 
-#créer un dictionnaire pour avoir tous les cas de figures
+#créer un dictionnaire pour avoir tous les cas de figures {"key" :  value,}
 lut = {1: ("macron_emmanuel", "Emmanuel Macron"),
        2: ("arthaud_nathalie", "Nathalie Arthaud"),
        3: ("roussel_fabien", "Fabien Roussel"),
