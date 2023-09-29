@@ -19,7 +19,7 @@ Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce proje
 Problèmes connus
 Les fichiers CSV doivent être formatés de manière spécifique pour être correctement traités par le script d'extraction.
 Certains navigateurs peuvent rencontrer des problèmes de compatibilité avec certaines fonctionnalités du site internet.
-N'hésitez pas à ouvrir un problème si vous rencontrez des difficultés ou si vous avez des suggestions d'amélioration.
+N'hésitez pas à signaler un problème si vous rencontrez des difficultés ou si vous avez des suggestions d'amélioration.
 
-Licence
+
 Ce projet est sous licence Agplv3. 
